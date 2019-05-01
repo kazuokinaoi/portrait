@@ -94,7 +94,7 @@ h2 {
 	text-align: center;
 	color: #fff;
 	padding-top: 56px;
-	margin-bottom: 8px;
+	margin-bottom: 32px;
 	position: relative;
 }
 
@@ -114,4 +114,24 @@ h2::after {
 		width: 100%;
 		padding: 0 16px;
 	}
+}
+
+.myself{
+	display: flex;
+	margin-bottom: 32px;
+}
+.myself img{
+	width: 125px;
+	height:125px;
+}
+.myself p{
+	color: #fff;
+	text-align: left;
+	margin-left: 16px;
+	font-weight: 200;
+}
+.my_discription{
+	text-align: left;
+	color: #fff;
+	padding-bottom: 127px;
 }
