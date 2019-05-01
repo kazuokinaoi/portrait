@@ -1,0 +1,117 @@
+@charset "utf-8";
+body {
+	margin: 0 auto;
+	background: #fff;
+	color: #333;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'YuGothic', 'Roboto', 'Helvetica Neue', 'Hiragino Kaku Gothic Pro', 'Meiryo, Yu Gothic', 'Arial', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* clearfix */
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden
+}
+
+/* fade up */
+
+.fade-up {
+	transition: transform 0.7s, opacity 0.7s;
+	-moz-transition: transform 0.7s, opacity 0.7s;
+	-webkit-transition: transform 0.7s, opacity 0.7s;
+	-o-transition: transform 0.7s, opacity 0.7s;
+}
+
+.fade-up_on {
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+
+.fade-up_off {
+	opacity: 0;
+	transform: translateY(200px);
+	-webkit-transform: translateY(70px);
+	-moz-transform: translateY(70px);
+	-ms-transform: translateY(70px);
+}
+
+.wrap_560 {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	width: 560px;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 16px;
+	animation-name: fade-in;
+	animation-duration: 3s;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.title_wrap {
+	padding: 200px 0;
+}
+
+.about_me {
+	width: 100%;
+	background-image: url(../img/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+h2 {
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	padding-top: 56px;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+h2::after {
+	content: "";
+	position: absolute;
+	margin: 0 auto;
+	border-bottom: solid 3px #fff;
+	width: 48px;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+
+@media screen and (max-width:768px) {
+	.wrap_560 {
+		width: 100%;
+		padding: 0 16px;
+	}
+}
