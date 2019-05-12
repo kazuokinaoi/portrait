@@ -81,12 +81,16 @@ h1 {
 	padding: 200px 0;
 }
 
-.about_me {
+.about_me,
+.works {
 	width: 100%;
 	background-image: url(../img/bg1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+.works{
+	background-image: url(../img/bg2.jpg);
 }
 
 h2 {
@@ -135,4 +139,11 @@ h2::after {
 	text-align: left;
 	color: #fff;
 	padding-bottom: 127px;
+}
+
+.center{
+	text-align: center;
+
+	padding-bottom: 127px;
+	color: #fff;
 }
